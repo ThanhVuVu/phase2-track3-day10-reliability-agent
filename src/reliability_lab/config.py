@@ -30,6 +30,7 @@ class CacheConfig(BaseModel):
 
 class LoadTestConfig(BaseModel):
     requests: int = Field(gt=0)
+    static_fallback_message: str = "System overloaded. Please try again later."
 
 
 class ScenarioConfig(BaseModel):
